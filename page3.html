@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Afacad', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f4f4f4;
             background-image: url('carbon.jpg');
             background-repeat: no-repeat;
@@ -70,33 +70,43 @@
             margin: 20px auto; /* Center the container */
         }
 
-        /* Remaining styles unchanged */
-        .questions, .result-container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            width: 45%;
-        }
+        .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content horizontally */
+    justify-content: center; /* Center align the content vertically */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
 
-        .questions input, .questions select, .questions button {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-        }
+.questions h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
-        .questions button {
-            background-color: #5cb85c;
-            color: white;
-            transition: background-color 0.3s;
-        }
+.questions label, .questions input, .questions button {
+    width: 80%; /* Set a uniform width for better alignment */
+    max-width: 300px; /* Optional max-width for responsiveness */
+    text-align: center; /* Center-align text */
+    margin: 8px 0; /* Consistent margin for better spacing */
+}
 
-        .questions button:hover {
-            background-color: #4cae4c;
-        }
+.questions button {
+    width: 50%; /* Adjust button width to align with other elements */
+    max-width: 150px;
+    background-color: #5cb85c;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.questions button:hover {
+    background-color: #4cae4c;
+}
+
 
         .result-title {
             font-size: 24px;
@@ -135,13 +145,13 @@
                 <img src="./logo.png" alt="">
             </span>
             <nav class="nav-options">
-                <a href="#">Scan your Waste</a>
-                <a href="#">CarbonCalc</a>
-                <a href="#">Green Tips</a>
+                <a href="EcoSort.html">EcoSort</a>
+                <a href="page3.html">CarbonCalc</a>
+                <a href="page4.html">Green Tips</a>
             </nav>
         </div>
     </header>
-<br><br><br><br><br>
+
     <div class="container">
         <div class="questions">
             <h2>Carbon Footprint Calculator</h2>
